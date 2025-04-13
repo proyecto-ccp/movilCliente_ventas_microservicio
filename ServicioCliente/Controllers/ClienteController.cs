@@ -17,7 +17,7 @@ namespace ServicioCliente.Controllers
         }
 
         [HttpPost]
-        [Route("CargarCliente")]
+        [Route("CrearCliente")]
         [ProducesResponseType(typeof(ClienteOut), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ValidationProblemDetails), 401)]

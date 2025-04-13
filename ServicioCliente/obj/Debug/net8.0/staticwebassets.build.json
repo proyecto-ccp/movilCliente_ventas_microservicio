@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "umLwHjpiE23N15LwRimcWowLJrc+e+FzjdxyykDcn8U=",
+  "Source": "ServicioCliente",
+  "BasePath": "_content/ServicioCliente",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
