@@ -46,7 +46,7 @@ namespace Clientes.Infraestructura.RepositorioGenerico
         {
             var _context = GetContext();
             var entitySet = _context.Set<T>();
-            var res = await entitySet.Where(v => EF.Property<String>(v, Attribute) == ValueAttribute).ToListAsync();
+            var res = await entitySet.Where(v => EF.Property<string>(v, Attribute) == ValueAttribute).ToListAsync();
             await _context.DisposeAsync();
             return res;
         }

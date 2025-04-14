@@ -11,11 +11,6 @@ namespace Clientes.Infraestructura.Repositorios
         {
             _repositorioBase = repositorioBase;
         }
-        
-        public void Dispose()
-        {
-            _repositorioBase.Dispose();
-        }
 
         public async Task CrearCliente(Cliente cliente)
         {
