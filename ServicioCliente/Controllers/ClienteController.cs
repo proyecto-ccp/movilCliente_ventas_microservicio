@@ -85,5 +85,27 @@ namespace ServicioCliente.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet]
+        [Route("ObtenerClientesPorZona/{idZona}")]
+        [ProducesResponseType(typeof(ClienteOutList), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ValidationProblemDetails), 401)]
+        [ProducesResponseType(typeof(ValidationProblemDetails), 500)]
+        public async Task<IActionResult> ObtenerClientesPorZona(Guid idZona)
+        {
+            try
+            {
+                var resultado = await _consultasCliente.ObtenerClientesPorZona(idZona);
+                if (resultado.Resultado != Clientes.Aplicacion.Enum.Resultado.Error)
+                    return Ok(resultado);
+                else
+                    return Problem(resultado.Mensaje, statusCode: (int)resultado.Status, title: resultado.Resultado.ToString(), type: resultado.Resultado.ToString(), instance: HttpContext.Request.Path);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

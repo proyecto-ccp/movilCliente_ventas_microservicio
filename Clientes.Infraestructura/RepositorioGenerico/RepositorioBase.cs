@@ -51,6 +51,15 @@ namespace Clientes.Infraestructura.RepositorioGenerico
             return res;
         }
 
+        public async Task<List<T>> BuscarPorAtributo(Guid ValueAttribute, string Attribute)
+        {
+            var _context = GetContext();
+            var entitySet = _context.Set<T>();
+            var res = await entitySet.Where(v => EF.Property<Guid>(v, Attribute) == ValueAttribute).ToListAsync();
+            await _context.DisposeAsync();
+            return res;
+        }
+
         public async Task<List<T>> DarListado()
         {
             var _context = GetContext();

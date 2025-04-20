@@ -11,12 +11,14 @@ namespace Clientes.Aplicacion.Consultas
     {
         private readonly ObtenerCliente _obtenerCliente;
         private readonly ListadoClientes _listadoClientes;
+        private readonly ListadoClientesPorZona _listadoClientesPorZona;
         private readonly IMapper _mapper;
 
         public ManejadorConsultas(IClienteRepositorio clienteRepositorio, IMapper mapper)
         {
             _obtenerCliente = new ObtenerCliente(clienteRepositorio);
             _listadoClientes = new ListadoClientes(clienteRepositorio);
+            _listadoClientesPorZona = new ListadoClientesPorZona(clienteRepositorio);
             _mapper = mapper;
         }
         public async Task<ClienteOut> ObtenerClientePorId(Guid id)
@@ -83,6 +85,41 @@ namespace Clientes.Aplicacion.Consultas
 
             return output;
         }
-    
+
+        public async Task<ClienteOutList> ObtenerClientesPorZona(Guid idZona)
+        {
+            ClienteOutList output = new()
+            {
+                Clientes = []
+            };
+
+            try
+            {
+                var Clientes = await _listadoClientesPorZona.ObtenerClientesPorZona(idZona);
+
+                if (Clientes == null || Clientes.Count == 0)
+                {
+                    output.Resultado = Resultado.SinRegistros;
+                    output.Mensaje = "No se encontraron clientes para la zona";
+                    output.Status = HttpStatusCode.NoContent;
+                }
+                else
+                {
+                    output.Resultado = Resultado.Exitoso;
+                    output.Mensaje = "Clientes encontrados en la zona";
+                    output.Status = HttpStatusCode.OK;
+                    output.Clientes = _mapper.Map<List<ClienteDto>>(Clientes);
+                }
+            }
+            catch (Exception ex)
+            {
+                output.Resultado = Resultado.Error;
+                output.Mensaje = ex.Message;
+                output.Status = HttpStatusCode.InternalServerError;
+            }
+
+            return output;
+        }
+
     }
 }

@@ -171,6 +171,66 @@
           }
         }
       }
+    },
+    "/api/Cliente/ObtenerClientesPorZona/{idZona}": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "idZona",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClienteOutList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -209,6 +269,11 @@
           "email": {
             "type": "string",
             "nullable": true
+          },
+          "idZona": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -243,6 +308,10 @@
           "email": {
             "type": "string",
             "nullable": true
+          },
+          "idZona": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false
