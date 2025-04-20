@@ -3,6 +3,7 @@ using Clientes.Dominio.Puertos.Repositorios;
 using Clientes.Infraestructura.Repositorios;
 using Clientes.Infraestructura.RepositorioGenerico;
 using Microsoft.EntityFrameworkCore;
+using Clientes.Aplicacion.Consultas;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<ClientesDBContext>(options =>
 builder.Services.AddTransient(typeof(IRepositorioBase<>), typeof(RepositorioBase<>));
 builder.Services.AddTransient<IClienteRepositorio, ClienteRepositorio>();
 builder.Services.AddScoped<IComandosCliente, ManejadorComandos>();
+builder.Services.AddScoped<IConsultasCliente, ManejadorConsultas>();
 
 var app = builder.Build();
 

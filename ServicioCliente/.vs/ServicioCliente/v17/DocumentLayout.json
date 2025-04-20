@@ -7,35 +7,15 @@
       "RelativeMoniker": "D:0:0:{4A660B93-306C-4119-9EF0-68FB6909157E}|ServicioCliente.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{761B6613-F0B0-44E9-8506-80C3236AD5AC}|..\\Clientes.Aplicacion\\Clientes.Aplicacion.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\clientes.aplicacion\\dto\\clientein.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{761B6613-F0B0-44E9-8506-80C3236AD5AC}|..\\Clientes.Aplicacion\\Clientes.Aplicacion.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\clientes.aplicacion\\mapeadores\\clientemapeador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{761B6613-F0B0-44E9-8506-80C3236AD5AC}|..\\Clientes.Aplicacion\\Clientes.Aplicacion.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\clientes.aplicacion\\comandos\\manejadorcomandos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BACD2A-29B3-4CF8-905D-021D2B615C77}|..\\ServicioCliente.Dominio\\Clientes.Dominio.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\serviciocliente.dominio\\servicios\\crearcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2F163CA-4460-467E-A975-5354E5D1854D}|..\\Clientes.Infraestructura\\Clientes.Infraestructura.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\clientes.infraestructura\\repositoriogenerico\\repositoriobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2F163CA-4460-467E-A975-5354E5D1854D}|..\\Clientes.Infraestructura\\Clientes.Infraestructura.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\clientes.infraestructura\\repositorios\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BACD2A-29B3-4CF8-905D-021D2B615C77}|..\\ServicioCliente.Dominio\\Clientes.Dominio.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\serviciocliente.dominio\\entidades\\entidadbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BACD2A-29B3-4CF8-905D-021D2B615C77}|..\\ServicioCliente.Dominio\\Clientes.Dominio.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\serviciocliente.dominio\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A660B93-306C-4119-9EF0-68FB6909157E}|ServicioCliente.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\serviciocliente\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A660B93-306C-4119-9EF0-68FB6909157E}|ServicioCliente.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A660B93-306C-4119-9EF0-68FB6909157E}|ServicioCliente.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\serviciocliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A660B93-306C-4119-9EF0-68FB6909157E}|ServicioCliente.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2F163CA-4460-467E-A975-5354E5D1854D}|..\\Clientes.Infraestructura\\Clientes.Infraestructura.csproj|d:\\edward romero\\documents\\miso\\proyecto final ii\\movilcliente_ventas_microservicio\\clientes.infraestructura\\repositorios\\clientesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,12 +25,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e3fb24c2-2e84-3146-a5f8-bc25bbc68f8a}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -61,137 +37,50 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-13T14:27:24.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RepositorioBase.cs",
-              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Infraestructura\\RepositorioGenerico\\RepositorioBase.cs",
-              "RelativeDocumentMoniker": "..\\Clientes.Infraestructura\\RepositorioGenerico\\RepositorioBase.cs",
-              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Infraestructura\\RepositorioGenerico\\RepositorioBase.cs",
-              "RelativeToolTip": "..\\Clientes.Infraestructura\\RepositorioGenerico\\RepositorioBase.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAvwD4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T01:37:27.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClienteRepositorio.cs",
-              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Infraestructura\\Repositorios\\ClienteRepositorio.cs",
-              "RelativeDocumentMoniker": "..\\Clientes.Infraestructura\\Repositorios\\ClienteRepositorio.cs",
-              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Infraestructura\\Repositorios\\ClienteRepositorio.cs",
-              "RelativeToolTip": "..\\Clientes.Infraestructura\\Repositorios\\ClienteRepositorio.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAApwBAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T01:26:57.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClienteMapeador.cs",
-              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Aplicacion\\Mapeadores\\ClienteMapeador.cs",
-              "RelativeDocumentMoniker": "..\\Clientes.Aplicacion\\Mapeadores\\ClienteMapeador.cs",
-              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Aplicacion\\Mapeadores\\ClienteMapeador.cs",
-              "RelativeToolTip": "..\\Clientes.Aplicacion\\Mapeadores\\ClienteMapeador.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvxIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T01:45:42.349Z",
+              "WhenOpened": "2025-04-20T03:06:01.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClienteIn.cs",
-              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Aplicacion\\Dto\\ClienteIn.cs",
-              "RelativeDocumentMoniker": "..\\Clientes.Aplicacion\\Dto\\ClienteIn.cs",
-              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Aplicacion\\Dto\\ClienteIn.cs",
-              "RelativeToolTip": "..\\Clientes.Aplicacion\\Dto\\ClienteIn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAAAAAAAAAAAA==",
+              "Title": "RepositorioBase.cs",
+              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Infraestructura\\RepositorioGenerico\\RepositorioBase.cs",
+              "RelativeDocumentMoniker": "..\\Clientes.Infraestructura\\RepositorioGenerico\\RepositorioBase.cs",
+              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Infraestructura\\RepositorioGenerico\\RepositorioBase.cs",
+              "RelativeToolTip": "..\\Clientes.Infraestructura\\RepositorioGenerico\\RepositorioBase.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIAzwCwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T14:43:14.339Z",
+              "WhenOpened": "2025-04-19T22:59:34.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e3fb24c2-2e84-3146-a5f8-bc25bbc68f8a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
+              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\ClienteController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAvwD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T22:49:30.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ManejadorComandos.cs",
-              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Aplicacion\\Comandos\\ManejadorComandos.cs",
-              "RelativeDocumentMoniker": "..\\Clientes.Aplicacion\\Comandos\\ManejadorComandos.cs",
-              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Aplicacion\\Comandos\\ManejadorComandos.cs",
-              "RelativeToolTip": "..\\Clientes.Aplicacion\\Comandos\\ManejadorComandos.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAnwB8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T14:41:52.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T14:31:22.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CrearCliente.cs",
-              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente.Dominio\\Servicios\\CrearCliente.cs",
-              "RelativeDocumentMoniker": "..\\ServicioCliente.Dominio\\Servicios\\CrearCliente.cs",
-              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente.Dominio\\Servicios\\CrearCliente.cs",
-              "RelativeToolTip": "..\\ServicioCliente.Dominio\\Servicios\\CrearCliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T01:45:51.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EntidadBase.cs",
-              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente.Dominio\\Entidades\\EntidadBase.cs",
-              "RelativeDocumentMoniker": "..\\ServicioCliente.Dominio\\Entidades\\EntidadBase.cs",
-              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente.Dominio\\Entidades\\EntidadBase.cs",
-              "RelativeToolTip": "..\\ServicioCliente.Dominio\\Entidades\\EntidadBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T01:44:55.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente.Dominio\\Entidades\\Cliente.cs",
-              "RelativeDocumentMoniker": "..\\ServicioCliente.Dominio\\Entidades\\Cliente.cs",
-              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente.Dominio\\Entidades\\Cliente.cs",
-              "RelativeToolTip": "..\\ServicioCliente.Dominio\\Entidades\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T14:43:21.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClientesDBContext.cs",
-              "DocumentMoniker": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Infraestructura\\Repositorios\\ClientesDBContext.cs",
-              "RelativeDocumentMoniker": "..\\Clientes.Infraestructura\\Repositorios\\ClientesDBContext.cs",
-              "ToolTip": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Infraestructura\\Repositorios\\ClientesDBContext.cs",
-              "RelativeToolTip": "..\\Clientes.Infraestructura\\Repositorios\\ClientesDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T01:40:46.189Z",
+              "WhenOpened": "2025-04-19T22:48:33.715Z",
               "EditorCaption": ""
             }
           ]
