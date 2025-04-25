@@ -274,6 +274,14 @@
             "type": "string",
             "format": "uuid",
             "nullable": true
+          },
+          "zona": {
+            "type": "string",
+            "nullable": true
+          },
+          "ciudad": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

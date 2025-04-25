@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Clientes.Aplicacion.Dto;
 using Clientes.Aplicacion.Enum;
+using Clientes.Dominio.Entidades;
 using Clientes.Dominio.Puertos.Repositorios;
 using Clientes.Dominio.Servicios;
+using Clientes.Infraestructura.ZonasApiClient;
 using System.Net;
 
 namespace Clientes.Aplicacion.Consultas
@@ -13,13 +15,28 @@ namespace Clientes.Aplicacion.Consultas
         private readonly ListadoClientes _listadoClientes;
         private readonly ListadoClientesPorZona _listadoClientesPorZona;
         private readonly IMapper _mapper;
+        private readonly IZonasApiClient _zonasApiClient;
 
-        public ManejadorConsultas(IClienteRepositorio clienteRepositorio, IMapper mapper)
+        public ManejadorConsultas(IClienteRepositorio clienteRepositorio, IMapper mapper, IZonasApiClient zonasApiClient)
         {
             _obtenerCliente = new ObtenerCliente(clienteRepositorio);
             _listadoClientes = new ListadoClientes(clienteRepositorio);
             _listadoClientesPorZona = new ListadoClientesPorZona(clienteRepositorio);
             _mapper = mapper;
+            _zonasApiClient = zonasApiClient;
+        }
+
+        private void DiligenciarZona(Cliente cliente)
+        {
+            if (cliente.IdZona != Guid.Empty && cliente.IdZona != null)
+            {
+                var zona = _zonasApiClient.ObtenerZonaPorIdAsync(cliente.IdZona.Value).Result;
+                if (zona != null)
+                {
+                    cliente.Zona = zona.Nombre;
+                    cliente.Ciudad = zona.Ciudad;
+                }
+            }
         }
         public async Task<ClienteOut> ObtenerClientePorId(Guid id)
         {
@@ -36,6 +53,7 @@ namespace Clientes.Aplicacion.Consultas
                 }
                 else
                 {
+                    DiligenciarZona(Cliente);
                     ClienteOut.Resultado = Resultado.Exitoso;
                     ClienteOut.Mensaje = "Cliente encontrado";
                     ClienteOut.Status = HttpStatusCode.OK;
@@ -70,6 +88,10 @@ namespace Clientes.Aplicacion.Consultas
                 }
                 else
                 {
+                    foreach (var cliente in Clientes)
+                    {
+                        DiligenciarZona(cliente);
+                    }
                     output.Resultado = Resultado.Exitoso;
                     output.Mensaje = "Clientes encontrados";
                     output.Status = HttpStatusCode.OK;
@@ -105,6 +127,11 @@ namespace Clientes.Aplicacion.Consultas
                 }
                 else
                 {
+                    foreach (var cliente in Clientes)
+                    {
+                        DiligenciarZona(cliente);
+                    }
+
                     output.Resultado = Resultado.Exitoso;
                     output.Mensaje = "Clientes encontrados en la zona";
                     output.Status = HttpStatusCode.OK;

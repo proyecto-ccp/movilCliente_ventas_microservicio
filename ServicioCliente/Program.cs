@@ -4,6 +4,7 @@ using Clientes.Infraestructura.Repositorios;
 using Clientes.Infraestructura.RepositorioGenerico;
 using Microsoft.EntityFrameworkCore;
 using Clientes.Aplicacion.Consultas;
+using Clientes.Infraestructura.ZonasApiClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,11 @@ builder.Services.AddTransient(typeof(IRepositorioBase<>), typeof(RepositorioBase
 builder.Services.AddTransient<IClienteRepositorio, ClienteRepositorio>();
 builder.Services.AddScoped<IComandosCliente, ManejadorComandos>();
 builder.Services.AddScoped<IConsultasCliente, ManejadorConsultas>();
+
+builder.Services.AddHttpClient<IZonasApiClient, ZonasApiClient>(client =>
+{
+    client.BaseAddress = new Uri("https://servicio-atributos-596275467600.us-central1.run.app/api/Zona");
+});
 
 var app = builder.Build();
 

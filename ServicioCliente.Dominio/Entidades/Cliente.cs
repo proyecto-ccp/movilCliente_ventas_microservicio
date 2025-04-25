@@ -28,6 +28,12 @@ namespace Clientes.Dominio.Entidades
 
         [Column("idzona")]
         public Guid? IdZona { get; set; }
+
+        [NotMapped]
+        public string Zona { get; set; }
+
+        [NotMapped]
+        public string Ciudad { get; set; }
     }
 
 }

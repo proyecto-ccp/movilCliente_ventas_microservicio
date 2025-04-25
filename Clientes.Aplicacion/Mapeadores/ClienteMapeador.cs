@@ -14,6 +14,9 @@ namespace Clientes.Aplicacion.Mapeadores
                 .ForMember(dest => dest.Apellido, opt => opt.MapFrom(src => src.Apellido))
                 .ForMember(dest => dest.Documento, opt => opt.MapFrom(src => src.Documento))
                 .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+                .ForMember(dest => dest.IdZona, opt => opt.MapFrom(src => src.IdZona))
+                .ForMember(dest => dest.Zona, opt => opt.MapFrom(src => src.Zona))
+                .ForMember(dest => dest.Ciudad, opt => opt.MapFrom(src => src.Ciudad))
                 .ReverseMap();
 
             CreateMap<Cliente,ClienteIn>()

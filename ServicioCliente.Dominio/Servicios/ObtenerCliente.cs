@@ -4,9 +4,9 @@ using Clientes.Dominio.Puertos.Repositorios;
 
 namespace Clientes.Dominio.Servicios
 {
-    public class ObtenerCliente(IClienteRepositorio _clienteRepositorio)
+    public class ObtenerCliente(IClienteRepositorio clienteRepositorio)
     {
-        private readonly IClienteRepositorio clienteRepositorio = _clienteRepositorio;
+        private readonly IClienteRepositorio _clienteRepositorio = clienteRepositorio;
 
         public async Task<Cliente> ObtenerClientePorId(Guid id)
         {
