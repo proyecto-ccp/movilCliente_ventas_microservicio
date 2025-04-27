@@ -27,6 +27,11 @@ namespace Clientes.Infraestructura.Repositorios
             return await _repositorioBase.DarListado();
         }
 
+        public async Task<List<Cliente>> ObtenerClientesPorZona(Guid idZona)
+        {
+            return await _repositorioBase.BuscarPorAtributo(idZona, "IdZona");
+        }
+
         public async Task<bool> ExisteClientePorDocumento(string documento)
         {
             var existe = await _repositorioBase.BuscarPorAtributo(documento, "Documento");

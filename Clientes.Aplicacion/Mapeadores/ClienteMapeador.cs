@@ -14,6 +14,9 @@ namespace Clientes.Aplicacion.Mapeadores
                 .ForMember(dest => dest.Apellido, opt => opt.MapFrom(src => src.Apellido))
                 .ForMember(dest => dest.Documento, opt => opt.MapFrom(src => src.Documento))
                 .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+                .ForMember(dest => dest.IdZona, opt => opt.MapFrom(src => src.IdZona))
+                .ForMember(dest => dest.Zona, opt => opt.MapFrom(src => src.Zona))
+                .ForMember(dest => dest.Ciudad, opt => opt.MapFrom(src => src.Ciudad))
                 .ReverseMap();
 
             CreateMap<Cliente,ClienteIn>()
@@ -24,6 +27,7 @@ namespace Clientes.Aplicacion.Mapeadores
                 .ForMember(dest => dest.Direccion, opt => opt.MapFrom(src => src.Direccion))
                 .ForMember(dest => dest.Telefono, opt => opt.MapFrom(src => src.Telefono))
                 .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+                .ForMember(dest => dest.IdZona, opt => opt.MapFrom(src => src.IdZona))
                 .ReverseMap();
 
             CreateMap<ClienteOut,ClienteIn>()
@@ -34,6 +38,7 @@ namespace Clientes.Aplicacion.Mapeadores
                 .ForMember(dest => dest.Direccion, opt => opt.MapFrom(src => src.Cliente.Direccion))
                 .ForMember(dest => dest.Telefono, opt => opt.MapFrom(src => src.Cliente.Telefono))
                 .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Cliente.Email))
+                .ForMember(dest => dest.IdZona, opt => opt.MapFrom(src => src.Cliente.IdZona))
                 .ReverseMap();
         }
     }
