@@ -12,6 +12,9 @@ namespace Clientes.Aplicacion.Dto
         public string Direccion { get; set; }
         public string Telefono { get; set; }
         public string Email { get; set; }
+        public Guid? IdZona { get; set; }
+        public string Zona { get; set; }
+        public string Ciudad { get; set; }
     }
 
     public class ClienteOut : BaseOut 

@@ -9,5 +9,6 @@
         public string Direccion { get; set; }
         public string Telefono { get; set; }
         public string Email { get; set; }
+        public Guid IdZona { get; set; }
     }
 }

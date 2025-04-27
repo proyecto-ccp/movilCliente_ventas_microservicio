@@ -9,6 +9,7 @@ namespace Clientes.Dominio.Puertos.Repositorios
         Task EliminarCliente(Guid id);
         Task<Cliente> ObtenerClientePorId(Guid id);
         Task<List<Cliente>> ObtenerClientes();
+        Task<List<Cliente>> ObtenerClientesPorZona(Guid idZona);
         Task<bool> ExisteClientePorDocumento(string documento);
         Task<bool> ExisteClientePorEmail(string email);
     }
