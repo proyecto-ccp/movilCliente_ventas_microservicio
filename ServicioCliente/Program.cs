@@ -24,7 +24,7 @@ builder.Services.AddScoped<IConsultasCliente, ManejadorConsultas>();
 
 builder.Services.AddHttpClient<IZonasApiClient, ZonasApiClient>(client =>
 {
-    client.BaseAddress = new Uri("https://servicio-atributos-596275467600.us-central1.run.app/api/Zona");
+    client.BaseAddress = new Uri("https://servicio-atributos-596275467600.us-central1.run.app/");
 });
 
 var app = builder.Build();

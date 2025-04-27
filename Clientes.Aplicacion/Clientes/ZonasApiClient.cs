@@ -16,8 +16,7 @@ namespace Clientes.Infraestructura.ZonasApiClient
         }
         public async Task<ZonaDto> ObtenerZonaPorIdAsync(Guid idZona)
         {
-            var response = await _httpClient.GetAsync($"Zona/ObtenerZona/{idZona}");
-
+            var response = await _httpClient.GetAsync($"api/Atributos/Localizacion/Zona/{idZona}");
             if (!response.IsSuccessStatusCode)
                 throw new Exception("No se pudo obtener la zona");
 
