@@ -12,14 +12,7 @@ namespace Clientes.Dominio.Servicios
         {
             var cliente= await _clienteRepositorio.ObtenerClientePorId(id);
 
-            if(cliente == null)
-            {
-                throw new Exception("Cliente no encontrado");
-            }
-            else
-            {
-                return cliente;
-            }
+            return cliente;
         }
     }
 }

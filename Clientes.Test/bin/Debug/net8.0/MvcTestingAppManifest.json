@@ -1,0 +1,6 @@
+{
+  "Clientes.Aplicacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Aplicacion",
+  "Clientes.Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente.Dominio",
+  "Clientes.Infraestructura, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\Clientes.Infraestructura",
+  "ServicioCliente, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Edward Romero\\Documents\\MISO\\Proyecto Final II\\movilCliente_ventas_microservicio\\ServicioCliente"
+}

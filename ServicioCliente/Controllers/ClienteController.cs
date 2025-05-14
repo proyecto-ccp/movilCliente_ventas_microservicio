@@ -53,10 +53,10 @@ namespace ServicioCliente.Controllers
             try
             {
                 var resultado = await _consultasCliente.ObtenerClientePorId(id);
-                if (resultado.Resultado != Clientes.Aplicacion.Enum.Resultado.Error)
+                if (resultado.Resultado == Clientes.Aplicacion.Enum.Resultado.Exitoso)
                     return Ok(resultado);
                 else
-                    return Problem(resultado.Mensaje, statusCode: (int)resultado.Status, title: resultado.Resultado.ToString(), type: resultado.Resultado.ToString(), instance: HttpContext.Request.Path);
+                    return Problem(resultado.Mensaje, statusCode: (int)resultado.Status, title: resultado.Resultado.ToString(), type: resultado.Resultado.ToString(), instance: (HttpContext != null ? HttpContext.Request.Path : null));
             }
             catch (Exception ex)
             {

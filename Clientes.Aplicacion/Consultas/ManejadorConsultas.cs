@@ -49,7 +49,7 @@ namespace Clientes.Aplicacion.Consultas
                 {
                     ClienteOut.Resultado = Resultado.SinRegistros;
                     ClienteOut.Mensaje = "Cliente NO encontrado";
-                    ClienteOut.Status = HttpStatusCode.NoContent;
+                    ClienteOut.Status = HttpStatusCode.NotFound;
                 }
                 else
                 {
