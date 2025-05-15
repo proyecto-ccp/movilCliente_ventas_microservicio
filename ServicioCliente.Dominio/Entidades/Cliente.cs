@@ -26,6 +26,9 @@ namespace Clientes.Dominio.Entidades
         [Column("email")]
         public string Email { get; set; }
 
+        [Column("contrasenia")]
+        public string? Contrasenia { get; set; }
+
         [Column("idzona")]
         public Guid? IdZona { get; set; }
 

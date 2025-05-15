@@ -194,6 +194,7 @@ namespace Clientes.Test
                 Direccion = "Cra 124C # 162F - 16",
                 Telefono = "311254789",
                 Email = faker.Internet.Email(),
+                Contrasenia = faker.Internet.Password(),
                 IdZona = zoneId,
             };
 
@@ -216,7 +217,6 @@ namespace Clientes.Test
             });
 
             Assert.NotNull(clienteResult);
-            //Assert.Equal(clienteId, clienteResult.Cliente.Id);
             Assert.Equal(Clientes.Aplicacion.Enum.Resultado.Exitoso, clienteResult.Resultado);
             Assert.Equal(HttpStatusCode.Created, clienteResult.Status);
         }

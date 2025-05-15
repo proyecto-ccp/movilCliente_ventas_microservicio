@@ -39,7 +39,8 @@ namespace Clientes.Dominio.Servicios
                 || string.IsNullOrEmpty(cliente.Documento)
                 || string.IsNullOrEmpty(cliente.Direccion)
                 || string.IsNullOrEmpty(cliente.Telefono)
-                || string.IsNullOrEmpty(cliente.Email))
+                || string.IsNullOrEmpty(cliente.Email)
+                || string.IsNullOrEmpty(cliente.Contrasenia))
             {
                 throw new InvalidOperationException("Valores incorrectos para los parametros minimos.");
             }

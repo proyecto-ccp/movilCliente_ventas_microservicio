@@ -5,6 +5,7 @@ using Clientes.Infraestructura.RepositorioGenerico;
 using Microsoft.EntityFrameworkCore;
 using Clientes.Aplicacion.Consultas;
 using Clientes.Infraestructura.ZonasApiClient;
+using Clientes.Aplicacion.Clientes;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,14 +28,18 @@ builder.Services.AddHttpClient<IZonasApiClient, ZonasApiClient>(client =>
     client.BaseAddress = new Uri("https://servicio-atributos-596275467600.us-central1.run.app/");
 });
 
+builder.Services.AddHttpClient<IUsuariosApiClient, UsuariosApiClient>(client =>
+{
+    client.BaseAddress = new Uri("https://usuarios-596275467600.us-central1.run.app/");
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+/*if (app.Environment.IsDevelopment())
+{*/
+app.UseSwagger();
+app.UseSwaggerUI();
+//}
 
 app.UseHttpsRedirection();
 

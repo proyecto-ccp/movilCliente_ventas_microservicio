@@ -213,24 +213,27 @@ var assemblies = [
   {
     "name": "Clientes.Aplicacion",
     "classes": [
-      { "name": "Clientes.Aplicacion.Comandos.ManejadorComandos", "rp": "Clientes.Aplicacion_ManejadorComandos.html", "cl": 16, "ucl": 6, "cal": 22, "tl": 43, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Clientes.Aplicacion.Clientes.UsuariosApiClient", "rp": "Clientes.Aplicacion_UsuariosApiClient.html", "cl": 15, "ucl": 1, "cal": 16, "tl": 36, "cb": 1, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Clientes.Aplicacion.Comandos.ManejadorComandos", "rp": "Clientes.Aplicacion_ManejadorComandos.html", "cl": 33, "ucl": 12, "cal": 45, "tl": 68, "cb": 2, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Aplicacion.Consultas.ManejadorConsultas", "rp": "Clientes.Aplicacion_ManejadorConsultas.html", "cl": 81, "ucl": 28, "cal": 109, "tl": 152, "cb": 19, "tb": 24, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Aplicacion.Dto.BaseOut", "rp": "Clientes.Aplicacion_BaseOut.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 12, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Aplicacion.Dto.ClienteDto", "rp": "Clientes.Aplicacion_ClienteDto.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Clientes.Aplicacion.Dto.ClienteIn", "rp": "Clientes.Aplicacion_ClienteIn.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 14, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Clientes.Aplicacion.Dto.ClienteIn", "rp": "Clientes.Aplicacion_ClienteIn.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 15, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Aplicacion.Dto.ClienteOut", "rp": "Clientes.Aplicacion_ClienteOut.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Aplicacion.Dto.ClienteOutList", "rp": "Clientes.Aplicacion_ClienteOutList.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Clientes.Aplicacion.Dto.UsuarioDto", "rp": "Clientes.Aplicacion_UsuarioDto.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 23, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Clientes.Aplicacion.Dto.UsuarioResponseDto", "rp": "Clientes.Aplicacion_UsuarioResponseDto.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 23, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Aplicacion.Dto.ZonaDto", "rp": "Clientes.Aplicacion_ZonaDto.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 19, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Aplicacion.Dto.ZonaResponseDto", "rp": "Clientes.Aplicacion_ZonaResponseDto.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 19, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Clientes.Aplicacion.Mapeadores.ClienteMapeador", "rp": "Clientes.Aplicacion_ClienteMapeador.html", "cl": 33, "ucl": 0, "cal": 33, "tl": 45, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Clientes.Aplicacion.Mapeadores.ClienteMapeador", "rp": "Clientes.Aplicacion_ClienteMapeador.html", "cl": 35, "ucl": 0, "cal": 35, "tl": 46, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Infraestructura.ZonasApiClient.ZonasApiClient", "rp": "Clientes.Aplicacion_ZonasApiClient.html", "cl": 15, "ucl": 1, "cal": 16, "tl": 37, "cb": 1, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
   {
     "name": "Clientes.Dominio",
     "classes": [
-      { "name": "Clientes.Dominio.Entidades.Cliente", "rp": "Clientes.Dominio_Cliente.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 39, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Clientes.Dominio.Entidades.Cliente", "rp": "Clientes.Dominio_Cliente.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 42, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Dominio.Entidades.EntidadBase", "rp": "Clientes.Dominio_EntidadBase.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 15, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Clientes.Dominio.Servicios.CrearCliente", "rp": "Clientes.Dominio_CrearCliente.html", "cl": 21, "ucl": 8, "cal": 29, "tl": 48, "cb": 10, "tb": 20, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Clientes.Dominio.Servicios.CrearCliente", "rp": "Clientes.Dominio_CrearCliente.html", "cl": 23, "ucl": 8, "cal": 31, "tl": 49, "cb": 11, "tb": 22, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Dominio.Servicios.ListadoClientes", "rp": "Clientes.Dominio_ListadoClientes.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 15, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Dominio.Servicios.ListadoClientesPorZona", "rp": "Clientes.Dominio_ListadoClientesPorZona.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 15, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Clientes.Dominio.Servicios.ObtenerCliente", "rp": "Clientes.Dominio_ObtenerCliente.html", "cl": 6, "ucl": 0, "cal": 6, "tl": 18, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
@@ -245,7 +248,7 @@ var assemblies = [
   {
     "name": "ServicioCliente",
     "classes": [
-      { "name": "Program", "rp": "ServicioCliente_Program.html", "cl": 25, "ucl": 0, "cal": 25, "tl": 47, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Program", "rp": "ServicioCliente_Program.html", "cl": 36, "ucl": 0, "cal": 36, "tl": 52, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "ServicioCliente.Controllers.ClienteController", "rp": "ServicioCliente_ClienteController.html", "cl": 30, "ucl": 15, "cal": 45, "tl": 111, "cb": 7, "tb": 10, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];

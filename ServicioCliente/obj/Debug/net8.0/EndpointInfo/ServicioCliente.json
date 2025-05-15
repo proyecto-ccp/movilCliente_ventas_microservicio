@@ -317,6 +317,10 @@
             "type": "string",
             "nullable": true
           },
+          "contrasenia": {
+            "type": "string",
+            "nullable": true
+          },
           "idZona": {
             "type": "string",
             "format": "uuid"
